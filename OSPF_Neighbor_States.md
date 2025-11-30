@@ -113,3 +113,8 @@ Note: Receiving a Database Descriptor (DBD) packet from a neighbor in the init s
 - Routers can now use the information to calculate routing tables using **Shortest Path First (SPF) algorithm**.
 - Neighbor is fully functional for routing updates.
 
+## Neighbors Stuck in Exstart/Exchange State ##
+
+The problem occurs most frequently when you attempt to run OSPF between a Cisco router and another vendor router. 
+The problem occurs when the maximum transmission unit (MTU) settings for neighboring router interfaces do not match. 
+If the router with the higher MTU sends a packet larger that the MTU set on the neighboring router, the neighbor router ignores the packet.
